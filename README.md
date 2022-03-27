@@ -1,4 +1,5 @@
 # payfriends
 :moneybag: payfriends, picpay challenge
 
-My instagram: <a href="https://www.instagram.com/baptistellafe/" target="_blank">Follow me - Instagram</a>
+Instagram: <a href="https://www.instagram.com/baptistellafe/" target="_blank" title="Follow me">Personal profile</a>
+Instagram: <a href="https://www.instagram.com/baptistellafe/" target="_blank" title="Follow me">Developer profile</a>
