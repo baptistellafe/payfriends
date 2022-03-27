@@ -1,0 +1,20 @@
+/* IONIC */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* SOBREPONDO ION COMPONENTS */
+@import './../src/theme/scss/ion-components/ion-buttons.scss';
+@import './../src/theme/scss/ion-components/ion-inputs.scss';
+
+/* PAYFRIENDS RESET */
+* { font-family: var(--montserrat-font, inherit); }
+
+*::selection {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+p { margin: 0; }
+ion-app > ion-router-outlet {min-width: 320px; }

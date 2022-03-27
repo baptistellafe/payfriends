@@ -1,0 +1,84 @@
+@import './../../../theme/scss/mixins.scss';
+
+ion-content {
+  .payfriends-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .login-wrapper {
+      width: 100%;
+      background: var(--light-gray);
+      max-width: 540px; // DESKTOP
+      @include flexbox(center, center);
+
+      @media only screen and (max-width: 1080px) {
+        padding: 0 16px;
+      }
+
+      .login-form {
+        width: 100%;
+        height: auto;
+        @include flexbox(left, center, column);
+        max-width: 328px;
+
+        @media only screen and (min-width: 1080px) {
+          padding: 0 107px;
+          max-width: 100%;
+        }
+
+        ion-text {
+          text-align: left;
+
+          h1 {
+            color: var(--dark-blue);
+            font-weight: 800;
+            font-size: 24px;
+            margin: 0 0 18px 0;
+
+            span {
+              font-weight: normal;
+              color: var(--blue);
+            }
+          }
+
+          h2 {
+            font-size: 30px;
+            font-weight: 600;
+            color: var(--gray-text-dark);
+            margin-bottom: 32px;
+          }
+        }
+
+        ion-item-group {
+          ion-item {
+            --background: var(--light-gray);
+            --padding-start: 0;
+            --inner-padding-end: 0;
+          }
+        }
+
+        ion-button {
+          &.form-btn {
+            margin: 35px 0 0 0;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 1080px) {
+        max-width: 100%;
+      }
+    }
+
+    .login-illustration {
+      flex: 1;
+      background: var(--white);
+      @include flexbox(center, center);
+
+      // TINHA COLOCADO PARA SUMIR NOS 768 MAS OPTEI POR 1080 O DOBRO DO FORM AO LADO
+      @media only screen and (max-width: 1080px) {
+        display: none;
+      }
+    }
+  }
+}

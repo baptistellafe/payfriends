@@ -1,0 +1,38 @@
+<ion-content>
+  <section class="payfriends-login">
+    <div class="login-wrapper">
+      <form action="" class="login-form">
+        <ion-text>
+          <h1>Pay<span>Friends</span></h1>
+          <h2>Bem vindo de volta</h2>
+        </ion-text>
+
+        <ion-item-group mode="md">
+          <ion-item mode="md" lines="none">
+            <ion-label position="stacked">Email</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item mode="md" lines="none">
+            <ion-label position="stacked">Senha</ion-label>
+            <ion-input></ion-input>
+            <ion-icon name="eye" slot="end"></ion-icon>
+          </ion-item>
+
+          <ion-button
+          fill="solid"
+          shape="round"
+          class="form-btn"
+          expand="full"
+          mode="md">
+            Entrar
+          </ion-button>
+        </ion-item-group>
+      </form>
+    </div>
+
+    <div class="login-illustration">
+      <payfriends-svg [name]="'man-doing-online-payment'"></payfriends-svg>
+    </div>
+  </section>
+</ion-content>

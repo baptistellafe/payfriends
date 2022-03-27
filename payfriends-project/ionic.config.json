@@ -1,0 +1,7 @@
+{
+  "name": "payfriends-project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
