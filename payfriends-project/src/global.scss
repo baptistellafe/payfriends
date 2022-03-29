@@ -7,6 +7,8 @@
 /* SOBREPONDO ION COMPONENTS */
 @import './../src/theme/scss/ion-components/ion-buttons.scss';
 @import './../src/theme/scss/ion-components/ion-inputs.scss';
+@import './../src/theme/scss/ion-components/ion-checkbox.scss';
+
 
 /* PAYFRIENDS RESET */
 * { font-family: var(--montserrat-font, inherit); }
@@ -18,3 +20,28 @@
 
 p { margin: 0; }
 ion-app > ion-router-outlet {min-width: 320px; }
+
+/* HEADERS (h1, h2, h3...) */
+.main-header {
+  font-weight: 600;
+  color: var(--gray-text-dark);
+}
+
+/* TEXTS */
+.primary-text,
+.secondary-text {
+  font-weight: normal;
+  font-family: var(--lato-font);
+}
+
+.primary-text { 
+  color: var(--gray-text);
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.secondary-text {
+  color: var(--gray-text-secondary);
+  line-height: 20px;
+  font-size: 12px;
+}

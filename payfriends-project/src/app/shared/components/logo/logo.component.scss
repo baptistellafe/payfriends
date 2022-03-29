@@ -1,0 +1,29 @@
+ion-text {
+  text-align: left;
+
+  h1 {
+    font-weight: 800;
+    font-size: 24px;
+    margin: 0;
+
+    span {
+      font-weight: normal;
+    }
+  }
+
+  &.blue {
+    h1 {
+      color: var(--dark-blue);
+  
+      span {
+        color: var(--blue);
+      }
+    }
+  }
+
+  &.white {
+    h1 {
+      color: var(--white);
+    }
+  }
+}

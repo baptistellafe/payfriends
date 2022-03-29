@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SvgComponent } from './svg/svg.component';
-
-
+import { LogoComponent } from './logo/logo.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
-    SvgComponent
+    SvgComponent,
+    LogoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ],
   exports: [
-    SvgComponent
+    SvgComponent,
+    LogoComponent
   ]
 })
 export class ComponentsModule { }

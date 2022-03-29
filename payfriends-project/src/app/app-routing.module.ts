@@ -12,8 +12,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'meus-pagamentos',
     pathMatch: 'full'
+  },
+  {
+    path: 'meus-pagamentos',
+    loadChildren: () => import('./pages/meus-pagamentos/meus-pagamentos.module').then( m => m.MeusPagamentosPageModule)
   },
 ];
 

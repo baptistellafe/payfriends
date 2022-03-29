@@ -1,0 +1,129 @@
+<ion-header
+mode="md"
+class="ion-no-border">
+  <ion-toolbar>
+    <div class="payfriends-toolbar">
+      <payfriends-logo
+      slot="start"
+      [theme]="'white'">
+      </payfriends-logo>
+  
+      <ion-avatar slot="end">
+        <img 
+          src="./../../../assets/illustrations/ellipse-2.png"
+          alt="Picture"
+          title="Person name"
+        />
+      </ion-avatar>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [forceOverscroll]="false">
+  <section class="payfriends-meus-pagamentos">
+    <h1 class="main-header">Meus pagamentos</h1>
+
+    <div class="payments-wrapper">
+      <ion-button
+        fill="solid"
+        shape="round"
+        class="form-btn"
+        expand="full"
+        mode="md">
+        Adicionar pagamento
+      </ion-button>
+
+      <div class="payments-table">
+        <div class="payments-filter">
+          <div class="filter-by-user">
+            <!-- INPUT -->
+            <!-- BTN -->
+          </div>
+
+          <div class="filter-visualization">
+            <div class="filter-itens-length">
+              <!-- LABEL -->
+              <!-- SELECT -->
+            </div>
+
+            <div class="filter-pagination">
+              <!-- NUMBERS -->
+            </div>
+          </div>
+        </div>
+
+        <div class="payments-header">
+          <!-- HEADER -->
+        </div>
+
+        <div class="payments-content">
+          <div class="payment" *ngFor="let item of [1,2,3,4,5]">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="2">
+                  <div class="payment-info">
+                    <ion-text>
+                      <p class="primary-text">Claudia</p>
+                      <p class="secondary-text">@claudia</p>
+                    </ion-text>
+                  </div>
+                </ion-col>
+
+                <ion-col size="2">
+                  <div class="payment-info">
+                    <ion-text>
+                      <p class="primary-text">Professor 1</p>
+                    </ion-text>
+                  </div>
+                </ion-col>
+
+                <ion-col size="2">
+                  <div class="payment-info">
+                    <ion-text>
+                      <p class="primary-text">23 Jun 2020</p>
+                      <p class="secondary-text">11:00 AM</p>
+                    </ion-text>
+                  </div>
+                </ion-col>
+
+                <ion-col size="2">
+                  <div class="payment-info">
+                    <ion-text>
+                      <p class="primary-text">R$ 100,00</p>
+                    </ion-text>
+                  </div>
+                </ion-col>
+
+                <ion-col size="1">
+                  <div class="payment-info">
+                    <ion-checkbox></ion-checkbox>
+                  </div>
+                </ion-col>
+
+                <ion-col>
+                  <div class="payment-info only-icons">
+                    <ion-button
+                    class="edit-btn"
+                    title="Clique para editar"
+                    fill="clear"
+                    mode="ios">
+                      <img src="./../../../assets/icon/edit.png" alt="Editar" title="Clique para editar">
+                    </ion-button>
+
+                    <ion-button
+                    class="remove-btn"
+                    title="Clique para remover"
+                    fill="clear"
+                    mode="ios">
+                      <img src="./../../../assets/icon/close.png" alt="Remover" title="Clique para remover">
+                    </ion-button>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</ion-content>

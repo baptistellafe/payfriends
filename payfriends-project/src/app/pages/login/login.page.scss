@@ -30,22 +30,8 @@ ion-content {
         ion-text {
           text-align: left;
 
-          h1 {
-            color: var(--dark-blue);
-            font-weight: 800;
-            font-size: 24px;
-            margin: 0 0 18px 0;
-
-            span {
-              font-weight: normal;
-              color: var(--blue);
-            }
-          }
-
           h2 {
             font-size: 30px;
-            font-weight: 600;
-            color: var(--gray-text-dark);
             margin-bottom: 32px;
           }
         }
