@@ -9,6 +9,9 @@
 @import './../src/theme/scss/ion-components/ion-inputs.scss';
 @import './../src/theme/scss/ion-components/ion-checkbox.scss';
 
+/* UTILS */
+@import './../src/theme/scss/mixins.scss';
+
 
 /* PAYFRIENDS RESET */
 * { font-family: var(--montserrat-font, inherit); }
@@ -29,19 +32,38 @@ ion-app > ion-router-outlet {min-width: 320px; }
 
 /* TEXTS */
 .primary-text,
-.secondary-text {
-  font-weight: normal;
+.secondary-text,
+.header-text {
   font-family: var(--lato-font);
 }
 
-.primary-text { 
+.primary-text,
+.header-text {
   color: var(--gray-text);
-  font-size: 14px;
   line-height: 16.8px;
+}
+
+.primary-text { 
+  font-size: 14px;
 }
 
 .secondary-text {
   color: var(--gray-text-secondary);
   line-height: 20px;
   font-size: 12px;
+}
+
+.header-text {
+  font-size: 14px;
+  font-weight: 700;
+  @include flexbox(center, flex-start, row);
+
+  &::after {
+    content: url('./assets/icon/orderby.svg');
+    margin-left: 10.25px;
+  }
+}
+
+.content-ios {
+  pointer-events: auto !important;    // to fix scroll lock on ios
 }

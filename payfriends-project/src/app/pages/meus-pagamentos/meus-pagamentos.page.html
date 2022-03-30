@@ -19,7 +19,7 @@ class="ion-no-border">
   </ion-toolbar>
 </ion-header>
 
-<ion-content [forceOverscroll]="false">
+<ion-content>
   <section class="payfriends-meus-pagamentos">
     <h1 class="main-header">Meus pagamentos</h1>
 
@@ -35,9 +35,31 @@ class="ion-no-border">
 
       <div class="payments-table">
         <div class="payments-filter">
+          <!-- FILTER BY USER -->
           <div class="filter-by-user">
-            <!-- INPUT -->
-            <!-- BTN -->
+            <ion-item
+            mode="md"
+            class="borded-item"
+            lines="none">
+              <ion-input
+              mode="md"
+              type="text"
+              inputmode="text"
+              class="search-input"
+              placeholder="Pesquisar por usuário">
+              </ion-input>
+            </ion-item>
+
+            <ion-button
+            fill="solid"
+            class="filter-btn"
+            mode="md">
+              <img
+              src="./../../../assets/icon/filter.svg"
+              [alt]="'Filter'"
+              [title]="'Clique para filtrar'">
+                Filtrar
+            </ion-button>
           </div>
 
           <div class="filter-visualization">
@@ -53,11 +75,53 @@ class="ion-no-border">
         </div>
 
         <div class="payments-header">
-          <!-- HEADER -->
+          <ion-grid>
+            <ion-row>
+              <ion-col size="2">
+                <div class="payment-info">
+                  <ion-text>
+                    <p class="header-text">Usuário</p>
+                  </ion-text>
+                </div>
+              </ion-col>
+
+              <ion-col size="2">
+                <div class="payment-info">
+                  <ion-text>
+                    <p class="header-text">Título</p>
+                  </ion-text>
+                </div>
+              </ion-col>
+
+              <ion-col size="2">
+                <div class="payment-info">
+                  <ion-text>
+                    <p class="header-text">Data</p>
+                  </ion-text>
+                </div>
+              </ion-col>
+
+              <ion-col size="2">
+                <div class="payment-info">
+                  <ion-text>
+                    <p class="header-text">Valor</p>
+                  </ion-text>
+                </div>
+              </ion-col>
+
+              <ion-col size="2">
+                <div class="payment-info">
+                  <ion-text>
+                    <p class="header-text">Pago</p>
+                  </ion-text>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </div>
 
         <div class="payments-content">
-          <div class="payment" *ngFor="let item of [1,2,3,4,5]">
+          <div class="payment" *ngFor="let item of [1,2,3,4,5, 6]">
             <ion-grid>
               <ion-row>
                 <ion-col size="2">

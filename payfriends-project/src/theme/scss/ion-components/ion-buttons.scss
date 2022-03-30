@@ -5,5 +5,20 @@ ion-button {
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
+    --box-shadow: none;
+    font-family: var(--roboto-font);
+  }
+
+  &.filter-btn {
+    --background: var(--gray-button);
+    --color: var(--gray-text);
+    font-size: 12px;
+    font-family: var(--lato-font);
+    line-height: 14.4px;
+    --box-shadow: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-style: normal;
+    --border-radius: 6px;
   }
 }

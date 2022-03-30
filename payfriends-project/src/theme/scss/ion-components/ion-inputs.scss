@@ -1,5 +1,14 @@
 ion-input {
-  .login-input {
-    
+  &.search-input {
+    color: var(--gray-text-secondary);
+    --placeholder-color: var(--gray-text-secondary);
+    --placeholder-font-weight: 400;
+    --placeholder-opacity: 1;
+    font-size: 14px;
+    font-family: var(--lato-font) !important;
+    margin: 0;
+    font-weight: 400;
+    --padding-top: 0;
+    --padding-bottom: 0;
   }
 }
