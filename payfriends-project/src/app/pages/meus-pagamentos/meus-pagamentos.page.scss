@@ -1,32 +1,34 @@
 @import './../../../theme/scss/mixins.scss';
 
-ion-header {
-  ion-toolbar {
-    --background: var(--dark-blue);
-    --padding-start: 0;
-    --padding-top: 0;
-    --padding-bottom: 0;
-    --padding-end: 0;
-    --min-height: 0;
 
-    ion-avatar {
-      width: 45px;
-      height: 45px; 
-    }
-
-    .payfriends-toolbar {
-      background: var(--dark-blue);
-      width: 100%;
-      height: 100%;
-      height: 90px;
-      padding: 0 30px;
-      @include flexbox(center, space-between, row);
-    }
-  }
-}
 
 ion-content {
   --background: var(--light-gray);
+
+  ion-header {
+    ion-toolbar {
+      --background: var(--dark-blue);
+      --padding-start: 0;
+      --padding-top: 0;
+      --padding-bottom: 0;
+      --padding-end: 0;
+      --min-height: 0;
+  
+      ion-avatar {
+        width: 45px;
+        height: 45px; 
+      }
+  
+      .payfriends-toolbar {
+        background: var(--dark-blue);
+        width: 100%;
+        height: 100%;
+        height: 90px;
+        padding: 0 30px;
+        @include flexbox(center, space-between, row);
+      }
+    }
+  }
 
   .payfriends-meus-pagamentos {
     width: 100%;
@@ -72,6 +74,31 @@ ion-content {
           height: 64px;
           @include flexbox(center, space-between, row);
           padding: 0 14px;
+          width: 100%;
+
+          .filter-visualization {
+            @include flexbox(center, flex-start, row);
+
+            .filter-itens-length {
+              @include flexbox(center, flex-start, row);
+
+              ion-text {
+                p {
+                  color: var(--gray-text-secondary);
+                  font-family: var(--lato-font);
+                  font-weight: 500;
+                }
+              }
+
+              select {
+                margin-left: 8.75px;
+                height: 32px;
+                width: 77px;
+                border: 1px solid var(--input-border);
+                border-radius: 6px;
+              }
+            }
+          }
 
           .filter-by-user {
             @include flexbox(center, flex-start, row);
@@ -101,15 +128,27 @@ ion-content {
           @include flexbox(center, flex-start, row);
 
           ion-grid { padding: 0; --ion-grid-column-padding: 12px; }
+
+          @media only screen and (max-width: 991px) {
+            display: none;
+          }
         }
 
         .payments-content {
           width: 100%;
           @include flexbox(flex-start, flex-start, column);
+          background: var(--light-gray);
 
           .payment {
             width: 100%;
             height: 81px;
+            background: var(--white);
+
+            @media only screen and (max-width: 991px) {
+              height: auto;
+              border: 1px solid var(--input-border);
+              margin-top: 16px;
+            }
 
             &:nth-child(even) {
               background: var(--gray-zebra-striping);
@@ -122,15 +161,38 @@ ion-content {
               height: 100%;
               @include flexbox(flex-start, center, column);
 
+              &.hasPaid {
+                ion-text {
+                  p {
+                    @include flexbox(center, flex-start, row);
+
+                    span {
+                      margin-right: 16px;
+                      @media only screen and (min-width: 992px) {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+
               &.only-icons {
                 @include flexbox(center, flex-end, row);
-                flex-direction: row;
                 padding-right: 8px;
 
                 ion-button {
                   margin: 9.94px;
                   --padding-end: 0;
                   --padding-start: 0;
+                }
+              }
+
+              &.only-btns {
+                @include flexbox(center, flex-end, row);
+                padding-right: 0;
+
+                ion-button {
+                  margin: 0 0 0 10px;
                 }
               }
             }

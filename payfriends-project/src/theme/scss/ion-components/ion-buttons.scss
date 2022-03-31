@@ -7,6 +7,11 @@ ion-button {
     text-transform: uppercase;
     --box-shadow: none;
     font-family: var(--roboto-font);
+
+    &.gray {
+      --background: var(--gray-button);
+      --color: var(--gray-text-dark);
+    }
   }
 
   &.filter-btn {

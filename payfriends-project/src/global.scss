@@ -8,6 +8,8 @@
 @import './../src/theme/scss/ion-components/ion-buttons.scss';
 @import './../src/theme/scss/ion-components/ion-inputs.scss';
 @import './../src/theme/scss/ion-components/ion-checkbox.scss';
+@import './../src/theme/scss/ion-components/ion-modal.scss';
+
 
 /* UTILS */
 @import './../src/theme/scss/mixins.scss';
@@ -64,6 +66,27 @@ ion-app > ion-router-outlet {min-width: 320px; }
   }
 }
 
+.form-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-weight: bold;
+  color: var(--gray-form-title);
+  margin: 0;
+}
+
 .content-ios {
   pointer-events: auto !important;    // to fix scroll lock on ios
+}
+
+/* TO SHOW AND HIDE ELEMENTS */
+.hidden-mobile {
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.hidden-desk {
+  @media only screen and (min-width: 992px) {
+    display: none;
+  }
 }

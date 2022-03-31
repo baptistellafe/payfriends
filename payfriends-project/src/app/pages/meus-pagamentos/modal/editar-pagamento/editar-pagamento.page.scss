@@ -1,0 +1,48 @@
+@import './../../../../../theme/scss/mixins.scss';
+
+ion-content {
+  section.adicionar-pagamento {
+    padding: 40px 38px;
+    @include flexbox(flex-start, flex-start, column);
+    height: 100%;
+
+    .form-content {
+      @include flexbox(center, center, column);
+      width: 100%;
+      flex: 1;
+
+      ion-grid {
+        flex: none;
+        margin: 0;
+        --ion-grid-column-padding: 8px;
+
+        ion-row {
+          ion-col {
+            ion-item {
+              border: 1px solid var(--gray-input-border);
+              border-radius: 3.5px;
+            }
+          }
+        }
+      }
+    }
+
+    .form-buttons {
+      @include flexbox(center, flex-end, row);
+      width: 100%;
+
+      ion-button {
+        width: 150px;
+        margin: 0;
+
+        &.cancelar {
+
+        }
+
+        &.salvar {
+          margin: 0 0 0 29px;
+        }
+      }
+    }
+  }
+}

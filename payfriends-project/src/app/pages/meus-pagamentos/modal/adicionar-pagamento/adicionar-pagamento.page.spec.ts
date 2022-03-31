@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExcluirPagamentoComponent } from './excluir-pagamento.component';
+import { AdicionarPagamentoPage } from './adicionar-pagamento.page';
 
-describe('ExcluirPagamentoComponent', () => {
-  let component: ExcluirPagamentoComponent;
-  let fixture: ComponentFixture<ExcluirPagamentoComponent>;
+describe('AdicionarPagamentoPage', () => {
+  let component: AdicionarPagamentoPage;
+  let fixture: ComponentFixture<AdicionarPagamentoPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExcluirPagamentoComponent ],
+      declarations: [ AdicionarPagamentoPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ExcluirPagamentoComponent);
+    fixture = TestBed.createComponent(AdicionarPagamentoPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
