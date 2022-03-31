@@ -4,19 +4,24 @@
 
     <div class="form-content">
       <ion-text class="user-info-text">
-        <p>Usuário: Klerber Freitas</p>
-        <p>Data: 23/06/2020</p>
-        <p>Valor: R$ 100,00</p>
+        <p>Usuário: {{ payment.nome }}</p>
+        <p>Data: {{ payment.data }}</p>
+        <p>Valor: {{ payment.valor }}</p>
       </ion-text>
     </div>
 
     <div class="form-buttons">
       <ion-button
+      (click)="closeModal()"
+      fill="solid"
+      mode="md"
       class="form-btn gray cancelar">
         Cancelar
       </ion-button>
 
       <ion-button
+      fill="solid"
+      mode="md"
       class="form-btn salvar">
         Salvar
       </ion-button>

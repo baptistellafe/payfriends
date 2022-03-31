@@ -5,10 +5,11 @@
     <div class="form-content">
       <ion-grid>
         <ion-row>
-          <ion-col size="6">
+          <ion-col size="12" size-md="6">
             <ion-item
             lines="none">
               <ion-input
+              [value]="payment.nome"
               class="form-input"
               mode="ios"
               placeholder="Título*">
@@ -17,34 +18,37 @@
             </ion-item>
           </ion-col>
 
-          <ion-col size="6">
+          <ion-col size="12" size-md="6">
             <ion-item
             lines="none">
               <ion-input
+              [value]="payment.valor"
               class="form-input"
               mode="ios"
-              placeholder="Título*">
+              placeholder="Valor*">
                 
               </ion-input>
             </ion-item>
           </ion-col>
 
-          <ion-col size="6">
+          <ion-col size="12" size-md="6">
             <ion-item
             lines="none">
               <ion-input
+              [value]="payment.data"
               class="form-input"
               mode="ios"
-              placeholder="Título*">
+              placeholder="Data*">
                 
               </ion-input>
             </ion-item>
           </ion-col>
 
-          <ion-col size="6">
+          <ion-col size="12" size-md="6">
             <ion-item
             lines="none">
               <ion-input
+              [value]="payment.titulo"
               class="form-input"
               mode="ios"
               placeholder="Título*">
@@ -58,11 +62,16 @@
 
     <div class="form-buttons">
       <ion-button
+      (click)="closeModal()"
+      fill="solid"
+      mode="md"
       class="form-btn gray cancelar">
         Cancelar
       </ion-button>
 
       <ion-button
+      fill="solid"
+      mode="md"
       class="form-btn salvar">
         Salvar
       </ion-button>

@@ -90,3 +90,14 @@ ion-app > ion-router-outlet {min-width: 320px; }
     display: none;
   }
 }
+
+/* TABLE ORDER */
+.can-order {
+  &:hover {
+    cursor: pointer;
+
+    p::after {
+      opacity: .5;
+    }
+  }
+}
